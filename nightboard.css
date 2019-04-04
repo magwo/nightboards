@@ -1,0 +1,33 @@
+html, body {
+    color: #838787;
+}
+
+h1, .secondary {
+    color: #33A5DA;
+    border-bottom: 2px solid #838787;
+}
+
+#container {
+    background-color: #222222;
+}
+
+section {
+    margin: 16px 0;
+}
+.situation {
+    color: #E74D44;
+    text-transform: uppercase;
+    font-size: 93%;
+}
+.radio-you {
+    color: #33A5DA;
+}
+.radio-other {
+    color: #838787;
+    font-style: italic;
+}
+
+.radio-other2 {
+    color: #8387a7;
+    font-style: italic;
+}
