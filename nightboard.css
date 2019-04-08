@@ -46,6 +46,10 @@ section {
     font-style: italic;
 }
 .radio-other2 {
-    color: #c397c7;
+    color: #885;
+    font-style: italic;
+}
+.radio-other3 {
+    color: #669;
     font-style: italic;
 }
