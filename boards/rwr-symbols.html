@@ -1,0 +1,149 @@
+<h1>CASE III recovery comms example</h1>
+
+<section class="flowedlonglist3rd" id="rwr-list">
+    
+</section>
+
+<script>
+    const rawSymbols = 
+    [
+        { name: "MiG_23_", sym: "23" },
+        { name: "MiG_29_", sym: "29" },
+        { name: "MIG_29K_", sym: "29" },
+        { name: "MiG_29G_", sym: "29" },
+        { name: "MiG_29C_", sym: "29" },
+        { name: "J-11A", sym: "29" },
+        { name: "Su_27_", sym: "29" },
+        { name: "Su_33_", sym: "29" },
+        { name: "F_14_", sym: "14" },
+        { name: "F_15_", sym: "15" },
+        { name: "F_15E_", sym: "15" },
+        { name: "F_16_", sym: "16" },
+        { name: "F_16A_", sym: "16" },
+        { name: "F_2_", sym: "F2" },
+        { name: "Su_30_", sym: "30" },
+        { name: "FA_18_", sym: "18" },
+        { name: "FA_18C_", sym: "18" },
+        { name: "Su_34_", sym: "34" },
+        { name: "Mirage_", sym: "M2" },
+        { name: "F_4E_", sym: "F4" },
+        { name: "F_5E_", sym: "F5" },
+        { name: "Su_24_", sym: "24" },
+        { name: "Su_24MR_", sym: "24" },
+        { name: "AV_8B_", sym: "AV" },
+        { name: "EA_6B_", sym: "E6" },
+        { name: "F_111_", sym: "11" },
+        { name: "Tu_160_", sym: "BJ" },
+        { name: "B_1_", sym: "B1" },
+        { name: "Tu_22M3_", sym: "22" },
+        { name: "MiG_25P_", sym: "25" },
+        { name: "MiG_31_", sym: "31" },
+        { name: "Tu_95_", sym: "95" },
+        { name: "Tu_142_", sym: "Tu" },
+        { name: "B_52_", sym: "52" },
+        { name: "A_50_", sym: "50" },
+        { name: "E_3_", sym: "E3" },
+        { name: "S_3A_", sym: "S3" },
+        { name: "S_3R_", sym: "S3" },
+        { name: "E_2C_", sym: "E2" },
+        { name: "C_17_", sym: "17" },
+        { name: "C_130_", sym: "13" },
+        { name: "IL_76_", sym: "76" },
+        { name: "AN_26B_", sym: "AN" },
+        { name: "AN_30M_", sym: "AN" },
+        { name: "KC_10_", sym: "KC" },
+        { name: "KC_135_", sym: "KC" },
+        { name: "IL_78_", sym: "78" },
+        { name: "Su_39_", sym: "39" },
+        { name: "EWR_1L13_", sym: "S" },
+        { name: "EWR_55G6_", sym: "S" },
+        { name: "S300PS_SR_5N66M", sym: "CS" },
+        { name: "S300PS_SR_64H6E", sym: "BB", extra: "Big bird" },
+        { name: "RLO_9C15MT_", sym: "BD" },
+        { name: "RLO_9C19M2_", sym: "HS" },
+        { name: "Buk_SR_9S18M1", sym: "SD" },
+        { name: "Kub_STR_9S91", sym: "06" },
+        { name: "Dog_Ear", sym: "DE" },
+        { name: "Roland_rdr", sym: "GR" },
+        { name: "Patriot_STR_ANMPQ_53", sym: "PT" },
+        { name: "Hawk_SR_ANMPQ_50", sym: "HA" },
+        { name: "S300PS_TR_30N6", sym: "10" },
+        { name: "RLS_5H63C", sym: "10" },
+        { name: "RLS_9C32_1_", sym: "12" },
+        { name: "Hawk_TR_ANMPQ_46", sym: "HK" },
+        { name: "S300V_9A82_", sym: "12" },
+        { name: "S300V_9A83", sym: "12" },
+        { name: "Buk_LN_9A310M1", sym: "11" },
+        { name: "BUK_LL_", sym: "11" },
+        { name: "Osa_9A33", sym: "08" },
+        { name: "Strela_9A35M3", sym: "13" },
+        { name: "Tor_9A331", sym: "15" },
+        { name: "Roland_ADS", sym: "RO" },
+        { name: "Tunguska_2S6", sym: "S6" },
+        { name: "ZSU_23_4_Shilka", sym: "A" },
+        { name: "Gepard", sym: "A" },
+        { name: "Vulcan_M163", sym: "A" },
+        { name: "Kuznecow_", sym: "SW" },
+        { name: "VINSON_", sym: "48" },
+        { name: "MOSCOW_", sym: "T2" },
+        { name: "GROZNY_", sym: "HN" },
+        { name: "AZOV_", sym: "TS" },
+        { name: "ALBATROS_", sym: "HP" },
+        { name: "AMETYST_", sym: "SC" },
+        { name: "OREL_", sym: "HN" },
+        { name: "REZKY_", sym: "TP" },
+        { name: "PERRY_", sym: "49" },
+        { name: "OSA_", sym: "DT" },
+        { name: "MOLNIYA_", sym: "PS" },
+        { name: "SKORY_", sym: "HN" },
+        { name: "SPRUANCE_", sym: "40" },
+        { name: "TICONDEROGA_", sym: "AE" },
+        { name: "BORA_", sym: "CD" },
+        { name: "BOBRUISK_", sym: "CD" },
+        { name: "VETER_", sym: "PP" },
+        { name: "NEUSTRASH_", sym: "TP" },
+        { name: "MICA_R_", sym: "M" },
+        { name: "P_27AE_", sym: "M" },
+        { name: "P_77_", sym: "M" },
+        { name: "P_37_", sym: "M" },
+        { name: "AIM_54_", sym: "M" },
+        { name: "AIM_120_", sym: "M" },
+        { name: "AIM_120C_", sym: "M" },
+        { name: "S125_SR_P_19", sym: "FF", extra: "Flat Face" },
+        { name: "S125_TR_SNR", sym: "LB", extra: "Low Blow" },
+        { name: "MiG-19P", sym: "19" },
+        { name: "SNR_75V", sym: "FS", extra: "Fan Song" },
+        { name: "Rapier_fsa_blindfire_radar", sym: "RS" },
+        { name: "Rapier_fsa_launcher", sym: "RT" },
+        { name: "M-2000C", sym: "M2" },
+        { name: "MiG-21Bis", sym: "21" },
+        { name: "KJ-2000", sym: "50" },
+    ];
+
+
+    const grouped = rawSymbols.reduce((groups, symbol) => {
+        groups[symbol.sym] = groups[symbol.sym] || [];
+        groups[symbol.sym].push(symbol);
+        return groups;
+    }, {});
+
+    console.log("groups are", grouped);
+
+    const sortedGroupKeys = Object.keys(grouped).sort();
+
+
+    function getCleanName(symbol) {
+        console.log(symbol);
+        return symbol.name.replace(/_/g, "") + (symbol.extra ? ` (${symbol.extra})` : "");
+    }
+
+
+    let html = "";
+    for(let groupKey of sortedGroupKeys) {
+        const group = grouped[groupKey];
+        html += `<p>${group[0].sym}, ${group.map(s => getCleanName(s)).join(", ")}</p>`;
+    };
+
+    var scriptTag = document.getElementById("rwr-list");
+    scriptTag.innerHTML = html;
+</script>

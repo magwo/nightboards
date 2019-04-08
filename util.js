@@ -30,4 +30,9 @@ async function fetchHtmlAsText(url) {
 async function addHtml(url) {
     const contentEl = document.getElementById("content");
     contentEl.innerHTML = await fetchHtmlAsText(url);
+    const scripts = contentEl.getElementsByTagName("script");
+    
+    for (let script of scripts) {
+        eval(script.innerHTML);
+    };
 }
