@@ -1,4 +1,4 @@
-<h1>CASE III recovery comms example</h1>
+<h1>RWR Symbols (AN/ALR)</h1>
 
 <section class="flowedlonglist3rd" id="rwr-list">
     
@@ -41,11 +41,11 @@
         { name: "Tu_95_", sym: "95" },
         { name: "Tu_142_", sym: "Tu" },
         { name: "B_52_", sym: "52" },
-        { name: "A_50_", sym: "50" },
-        { name: "E_3_", sym: "E3" },
+        { name: "A_50_", sym: "50", extra: "AWACS" },
+        { name: "E_3_", sym: "E3", extra: "AWACS" },
         { name: "S_3A_", sym: "S3" },
         { name: "S_3R_", sym: "S3" },
-        { name: "E_2C_", sym: "E2" },
+        { name: "E_2C_", sym: "E2", extra: "AWACS" },
         { name: "C_17_", sym: "17" },
         { name: "C_130_", sym: "13" },
         { name: "IL_76_", sym: "76" },
@@ -55,77 +55,80 @@
         { name: "KC_135_", sym: "KC" },
         { name: "IL_78_", sym: "78" },
         { name: "Su_39_", sym: "39" },
-        { name: "EWR_1L13_", sym: "S" },
-        { name: "EWR_55G6_", sym: "S" },
-        { name: "S300PS_SR_5N66M", sym: "CS" },
-        { name: "S300PS_SR_64H6E", sym: "BB", extra: "Big bird" },
-        { name: "RLO_9C15MT_", sym: "BD" },
-        { name: "RLO_9C19M2_", sym: "HS" },
-        { name: "Buk_SR_9S18M1", sym: "SD" },
-        { name: "Kub_STR_9S91", sym: "06" },
-        { name: "Dog_Ear", sym: "DE" },
-        { name: "Roland_rdr", sym: "GR" },
-        { name: "Patriot_STR_ANMPQ_53", sym: "PT" },
-        { name: "Hawk_SR_ANMPQ_50", sym: "HA" },
-        { name: "S300PS_TR_30N6", sym: "10" },
-        { name: "RLS_5H63C", sym: "10" },
-        { name: "RLS_9C32_1_", sym: "12" },
-        { name: "Hawk_TR_ANMPQ_46", sym: "HK" },
-        { name: "S300V_9A82_", sym: "12" },
-        { name: "S300V_9A83", sym: "12" },
-        { name: "Buk_LN_9A310M1", sym: "11" },
-        { name: "BUK_LL_", sym: "11" },
-        { name: "Osa_9A33", sym: "08" },
-        { name: "Strela_9A35M3", sym: "13" },
-        { name: "Tor_9A331", sym: "15" },
-        { name: "Roland_ADS", sym: "RO" },
-        { name: "Tunguska_2S6", sym: "S6" },
-        { name: "ZSU_23_4_Shilka", sym: "A" },
-        { name: "Gepard", sym: "A" },
-        { name: "Vulcan_M163", sym: "A" },
-        { name: "Kuznecow_", sym: "SW" },
-        { name: "VINSON_", sym: "48" },
-        { name: "MOSCOW_", sym: "T2" },
-        { name: "GROZNY_", sym: "HN" },
-        { name: "AZOV_", sym: "TS" },
-        { name: "ALBATROS_", sym: "HP" },
-        { name: "AMETYST_", sym: "SC" },
-        { name: "OREL_", sym: "HN" },
-        { name: "REZKY_", sym: "TP" },
-        { name: "PERRY_", sym: "49" },
-        { name: "OSA_", sym: "DT" },
-        { name: "MOLNIYA_", sym: "PS" },
-        { name: "SKORY_", sym: "HN" },
-        { name: "SPRUANCE_", sym: "40" },
-        { name: "TICONDEROGA_", sym: "AE" },
-        { name: "BORA_", sym: "CD" },
-        { name: "BOBRUISK_", sym: "CD" },
-        { name: "VETER_", sym: "PP" },
-        { name: "NEUSTRASH_", sym: "TP" },
-        { name: "MICA_R_", sym: "M" },
-        { name: "P_27AE_", sym: "M" },
-        { name: "P_77_", sym: "M" },
-        { name: "P_37_", sym: "M" },
-        { name: "AIM_54_", sym: "M" },
-        { name: "AIM_120_", sym: "M" },
-        { name: "AIM_120C_", sym: "M" },
-        { name: "S125_SR_P_19", sym: "FF", extra: "Flat Face" },
-        { name: "S125_TR_SNR", sym: "LB", extra: "Low Blow" },
+        { name: "EWR_1L13_", sym: "S", type: "📡" },
+        { name: "EWR_55G6_", sym: "S", type: "📡" },
+        { name: "S300PS_SR_5N66M", sym: "CS", type: "🚀", extra: "SA-10" },
+        { name: "S300PS_SR_64H6E", sym: "BB", extra: "Big Bird SA-10", type: "🚀" },
+        { name: "RLO_9C15MT_", sym: "BD", type: "🚀" },
+        { name: "RLO_9C19M2_", sym: "HS", type: "🚀" },
+        { name: "Buk_SR_9S18M1", sym: "SD", type: "🚀", extra: "SA-11" },
+        { name: "Kub_STR_9S91", sym: "06", type: "🚀", extra: "SA-6" },
+        { name: "Dog_Ear", sym: "DE", type: "🚀", extra: "SA-13" },
+        { name: "Roland_rdr", sym: "GR", type: "🚀" },
+        { name: "Patriot_STR_ANMPQ_53", sym: "PT", type: "🚀" },
+        { name: "Hawk_SR_ANMPQ_50", sym: "HA", type: "🚀" },
+        { name: "S300PS_TR_30N6", sym: "10", type: "🚀", extra: "SA-10" },
+        { name: "RLS_5H63C", sym: "10", type: "🚀" },
+        { name: "RLS_9C32_1_", sym: "12", type: "🚀" },
+        { name: "Hawk_TR_ANMPQ_46", sym: "HK", type: "🚀" },
+        { name: "S300V_9A82_", sym: "12", type: "🚀", extra: "SA-12" },
+        { name: "S300V_9A83", sym: "12", type: "🚀" },
+        { name: "Buk_LN_9A310M1", sym: "11", type: "🚀", extra: "SA-11" },
+        { name: "BUK_LL_", sym: "11", type: "🚀" },
+        { name: "Osa_9A33", sym: "08", type: "🚀", extra: "SA-8" },
+        { name: "Strela_9A35M3", sym: "13", type: "🚀", extra: "SA-13" },
+        { name: "Tor_9A331", sym: "15", type: "🚀", extra: "SA-15" },
+        { name: "Roland_ADS", sym: "RO", type: "🚀" },
+        { name: "Tunguska_2S6", sym: "S6", type: "🚀", extra: "SA-19" },
+        { name: "ZSU_23_4_Shilka", sym: "A", type: "🔫" },
+        { name: "Gepard", sym: "A", type: "🔫" },
+        { name: "Vulcan_M163", sym: "A", type: "🔫" },
+        { name: "Kuznecow_", sym: "SW", type: "", type: "🚢" },
+        { name: "VINSON_", sym: "48", type: "🚢" },
+        { name: "MOSCOW_", sym: "T2", type: "🚢" },
+        { name: "GROZNY_", sym: "HN", type: "🚢" },
+        { name: "AZOV_", sym: "TS", type: "🚢" },
+        { name: "ALBATROS_", sym: "HP", type: "🚢" },
+        { name: "AMETYST_", sym: "SC", type: "🚢" },
+        { name: "OREL_", sym: "HN", type: "🚢" },
+        { name: "REZKY_", sym: "TP", type: "🚢" },
+        { name: "PERRY_", sym: "49", type: "🚢" },
+        { name: "OSA_", sym: "DT", type: "🚢" },
+        { name: "MOLNIYA_", sym: "PS", type: "🚢" },
+        { name: "SKORY_", sym: "HN", type: "🚢" },
+        { name: "SPRUANCE_", sym: "40", type: "🚢" },
+        { name: "TICONDEROGA_", sym: "AE", type: "🚢" },
+        { name: "BORA_", sym: "CD", type: "🚢" },
+        { name: "BOBRUISK_", sym: "CD", type: "🚢" },
+        { name: "VETER_", sym: "PP", type: "🚢" },
+        { name: "NEUSTRASH_", sym: "TP", type: "🚢" },
+        { name: "MICA_R_", sym: "M", type: "🚀", style: "rwr-icon-flipped" },
+        { name: "P_27AE_", sym: "M", type: "🚀", style: "rwr-icon-flipped" },
+        { name: "P_77_", sym: "M", type: "🚀", style: "rwr-icon-flipped" },
+        { name: "P_37_", sym: "M", type: "🚀", style: "rwr-icon-flipped" },
+        { name: "AIM_54_", sym: "M", type: "🚀", style: "rwr-icon-flipped" },
+        { name: "AIM_120_", sym: "M", type: "🚀", style: "rwr-icon-flipped" },
+        { name: "AIM_120C_", sym: "M", type: "🚀", style: "rwr-icon-flipped" },
+        { name: "S125_SR_P_19", sym: "FF", extra: "Flat Face SA-3", type: "🚀" },
+        { name: "S125_TR_SNR", sym: "LB", extra: "Low Blow SA-3", type: "🚀" },
+        { name: "", sym: "EB", extra: "SA-3, LB+FF superimposed", type: "🚀" },
         { name: "MiG-19P", sym: "19" },
-        { name: "SNR_75V", sym: "FS", extra: "Fan Song" },
-        { name: "Rapier_fsa_blindfire_radar", sym: "RS" },
-        { name: "Rapier_fsa_launcher", sym: "RT" },
+        { name: "SNR_75V", sym: "FS", extra: "Fan Song SA-2", type: "🚀" },
+        { name: "Rapier_fsa_blindfire_radar", sym: "RS", type: "🚀" },
+        { name: "Rapier_fsa_launcher", sym: "RT", type: "🚀" },
         { name: "M-2000C", sym: "M2" },
         { name: "MiG-21Bis", sym: "21" },
-        { name: "KJ-2000", sym: "50" },
+        { name: "KJ-2000", sym: "50", extra: "AWACS" },
     ];
 
 
     const grouped = rawSymbols.reduce((groups, symbol) => {
-        groups[symbol.sym] = groups[symbol.sym] || [];
-        groups[symbol.sym].push(symbol);
+        const type = symbol.type || "✈️";
+        const key = symbol.sym + type;
+        groups[key] = groups[key] || [];
+        groups[key].push(symbol);
         return groups;
-    }, {});
+}, {});
 
     console.log("groups are", grouped);
 
@@ -134,15 +137,19 @@
 
     function getCleanName(symbol) {
         console.log(symbol);
-        return symbol.name.replace(/_/g, "") + (symbol.extra ? ` (${symbol.extra})` : "");
-    }
+        let name = symbol.name;
+        if(name.length > 12) {
+            name = name.slice(0, 10) + "..";
+        }
+        return name.replace(/_/g, "") + (symbol.extra ? ` (${symbol.extra})` : "");
+}
 
 
     let html = "";
     for(let groupKey of sortedGroupKeys) {
         const group = grouped[groupKey];
-        html += `<p>${group[0].sym}, ${group.map(s => getCleanName(s)).join(", ")}</p>`;
-    };
+        html += `<p><span class="rwr-green">${group[0].sym}</span><span class="rwr-icon ${group[0].style ? group[0].style : ""}">${group[0].type ? group[0].type : "✈️"}</span><span class="rwr-name">${group.map(s => getCleanName(s)).join(", ")}</span></p>`;
+};
 
     var scriptTag = document.getElementById("rwr-list");
     scriptTag.innerHTML = html;
