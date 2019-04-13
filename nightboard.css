@@ -11,6 +11,10 @@ h1, .secondary {
     border-bottom: 2px solid #838787;
 }
 
+em {
+    color: #555;
+}
+
 .checklist > div:not(:last-child) {
     border-bottom: 1px solid #555;
 }
